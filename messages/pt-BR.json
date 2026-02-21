@@ -1,0 +1,163 @@
+{
+  "metadata": {
+    "title": "Milliark Investments - O Futuro do Crescimento Financeiro",
+    "description": "Descubra as estratégias de investimento de Christiano Trotta. A Milliark está entre as principais firmas de investimento do mundo, oferecendo soluções financeiras premium.",
+    "ogTitle": "Milliark Investments - Eleve Seu Futuro Financeiro",
+    "ogDescription": "Explore a expertise financeira de Christiano Trotta.",
+    "twitterTitle": "Milliark Investments - Seu Parceiro Financeiro de Confiança",
+    "twitterDescription": "Junte-se a Christiano Trotta e à Milliark para moldar o futuro dos investimentos."
+  },
+  "nav": {
+    "home": "Início",
+    "about": "Quem somos",
+    "services": "O que oferecemos",
+    "testimonials": "Depoimentos",
+    "contact": "Contato",
+    "blog": "Blog"
+  },
+  "buttons": {
+    "callUs": "Ligue para Nós",
+    "seeOurJob": "Veja Nosso Trabalho",
+    "talkToUs": "Fale Conosco",
+    "viewOnMaps": "Ver no Google Maps",
+    "backToHome": "Voltar ao Início"
+  },
+  "hero": {
+    "tagline": "Na Milliark, entregamos resultados para investidores construindo negócios que impulsionam a economia de amanhã"
+  },
+  "logoTicker": {
+    "title": "Confiança das principais equipes inovadoras"
+  },
+  "features": {
+    "heading": "Eleve seus esforços de NEGÓCIOS.",
+    "subheading": "De pequenas startups a grandes empresas, nossa equipe revolucionou a forma como os negócios abordam o mercado.",
+    "tabs": {
+      "strongBusiness": {
+        "title": "Construir negócios sólidos",
+        "description": "Construir um negócio sólido não se trata apenas de criar um produto ou serviço; trata-se de estabelecer uma base que garanta crescimento, adaptabilidade e sustentabilidade. Um negócio forte prospera com princípios fundamentais como visão, liderança, foco no cliente e inovação, cada um desempenhando um papel crítico na formação de sua trajetória"
+      },
+      "latam": {
+        "title": "Construir uma empresa na LatAm",
+        "description": "Expandir ou iniciar uma empresa na América Latina (LatAm) requer uma compreensão profunda do cenário econômico único da região, do ambiente regulatório e dos comportamentos do consumidor. Desde navegar por mercados diversos até alavancar parcerias locais, construir uma empresa de sucesso na LatAm envolve planejamento estratégico, adaptabilidade e consciência cultural."
+      },
+      "financialSecurity": {
+        "title": "Construir segurança financeira",
+        "description": "Alcançar segurança financeira vai além de simplesmente economizar dinheiro; requer planejamento cuidadoso, investimentos inteligentes e gestão de riscos. Construir estabilidade financeira envolve definir metas financeiras claras, diversificar fontes de renda e tomar decisões informadas sobre poupança, investimentos e despesas."
+      },
+      "governance": {
+        "title": "Construir Governança Corporativa",
+        "description": "A governança corporativa é a espinha dorsal de uma organização bem-sucedida e sustentável. Ela abrange os sistemas, princípios e processos que garantem transparência, responsabilidade e tomada de decisão ética."
+      },
+      "regulations": {
+        "title": "Construir Regulamentações",
+        "description": "Estabelecer regulamentações eficazes é essencial para manter a ordem, proteger as partes interessadas e fomentar um ambiente econômico e empresarial estável."
+      },
+      "compliances": {
+        "title": "Construir Conformidades",
+        "description": "Construir estruturas sólidas de conformidade é essencial para que as organizações operem de forma ética, legal e eficiente."
+      },
+      "policies": {
+        "title": "Construir Políticas e POPs",
+        "description": "Desenvolver políticas claras e Procedimentos Operacionais Padrão (POPs) é essencial para manter a consistência, eficiência e responsabilidade dentro de uma organização."
+      },
+      "riskManagement": {
+        "title": "Construir Gestão de Riscos",
+        "description": "Implementar uma estrutura sólida de gestão de riscos é crucial para que as empresas identifiquem, avaliem e mitiguem ameaças potenciais."
+      }
+    }
+  },
+  "testimonials": {
+    "heading": "Além das Expectativas.",
+    "subheading": "Nossa mentalidade revolucionária transformou as estratégias de nossos clientes.",
+    "items": {
+      "sophia": {
+        "text": "\"Esta equipe transformou completamente a forma como gerencio meus projetos e prazos\"",
+        "name": "Sophia Perez",
+        "title": "Diretora @ Quantum"
+      },
+      "jamie": {
+        "text": "\"Esses caras revolucionaram completamente toda a nossa estratégia de SEO da noite para o dia\"",
+        "name": "Jamie Lee",
+        "title": "Fundador @ Pulse"
+      },
+      "alisa": {
+        "text": "\"A equipe é intuitiva, nos economizou incontáveis horas\"",
+        "name": "Alisa Hester",
+        "title": "Produto @ Innovate"
+      },
+      "alec": {
+        "text": "\"A produtividade da nossa equipe aumentou significativamente desde que começamos a trabalhar com eles\"",
+        "name": "Alec Whitten",
+        "title": "CTO @ Tech Solutions"
+      }
+    }
+  },
+  "team": {
+    "heading": "Conheça a Equipe Milliark",
+    "description": "Com visão estratégica e foco em resultados, Christiano Trotta conduziu empresas globais através de reestruturação, gestão e crescimento, especialmente em negócios internacionais e M&A, impulsionando o desempenho e transformando organizações em histórias de sucesso em todo o mundo.",
+    "members": {
+      "christiano": { "name": "Christiano Trotta", "role": "Presidente LatAm América" },
+      "pedro": { "name": "Pedro Trotta", "role": "Líder de Tecnologia" },
+      "vitoria": { "name": "Vitoria Petek", "role": "Head de Vendas" },
+      "vanessa": { "name": "Vanessa F.", "role": "Head de Marketing" }
+    }
+  },
+  "servicesPreview": {
+    "heading": "O Que Oferecemos",
+    "subheading": "Soluções essenciais para impulsionar crescimento, segurança e sucesso sustentável para o seu negócio.",
+    "viewAll": "Explorar Todos os Serviços"
+  },
+  "stats": {
+    "years": { "value": "18", "suffix": "+", "label": "Anos de Experiência" },
+    "offices": { "value": "5", "suffix": "", "label": "Escritórios Globais" },
+    "countries": { "value": "15", "suffix": "+", "label": "Países Alcançados" },
+    "clients": { "value": "200", "suffix": "+", "label": "Clientes Atendidos" }
+  },
+  "cta": {
+    "heading": "Milliark para todos.",
+    "subheading": "Alcance resultados claros e impactantes sem a complexidade."
+  },
+  "headquarters": {
+    "heading": "Nossas Sedes",
+    "locations": {
+      "florianopolis": "Florianópolis, Brasil",
+      "zurich": "Zürich, Suíça",
+      "campinas": "Campinas, Brasil",
+      "newYork": "New York, EUA",
+      "bvi": "BVI, Ilha Britânica"
+    }
+  },
+  "footer": {
+    "brand": "Milliark Investments",
+    "codedBy": "Desenvolvido por"
+  },
+  "notFound": {
+    "title": "Página não encontrada"
+  },
+  "blog": {
+    "heading": "Blog",
+    "comingSoon": "Em breve. Fique ligado para insights e atualizações."
+  },
+  "pages": {
+    "about": {
+      "title": "Sobre - Milliark Investments",
+      "description": "Conheça a equipe Milliark. Saiba mais sobre Christiano Trotta e a liderança estratégica por trás da Milliark Investments."
+    },
+    "services": {
+      "title": "Serviços - Milliark Investments",
+      "description": "Explore nossos serviços abrangentes de negócios e finanças. Da governança corporativa à gestão de riscos."
+    },
+    "testimonials": {
+      "title": "Depoimentos - Milliark Investments",
+      "description": "Veja o que nossos clientes dizem sobre trabalhar com a Milliark Investments."
+    },
+    "contact": {
+      "title": "Contato - Milliark Investments",
+      "description": "Entre em contato com a Milliark Investments. Visite nossas sedes ao redor do mundo."
+    },
+    "blog": {
+      "title": "Blog - Milliark Investments",
+      "description": "Insights e atualizações da Milliark Investments."
+    }
+  }
+}

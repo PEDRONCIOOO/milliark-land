@@ -1,8 +1,6 @@
-import { useRef, useEffect } from "react";
-import {
-  DotLottieCommonPlayer,
-  DotLottiePlayer,
-} from "@dotlottie/react-player";
+"use client";
+import { useRef, useEffect, useState } from "react";
+import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import {
   animate,
   motion,
@@ -18,10 +16,19 @@ const FeatureTab = (
     ComponentPropsWithoutRef<"div"> & { selected: boolean },
 ) => {
   const tabRef = useRef<HTMLDivElement>(null);
-  const dotLottieRef = useRef<DotLottieCommonPlayer>(null);
+  const lottieRef = useRef<LottieRefCurrentProps>(null);
+  const [animationData, setAnimationData] = useState<Record<string, unknown> | null>(null);
   const xPercentage = useMotionValue(0);
   const yPercentage = useMotionValue(0);
   const maskImage = useMotionTemplate`radial-gradient(80px 80px at ${xPercentage}% ${yPercentage}%,black,transparent)`;
+
+  useEffect(() => {
+    const path = props.icon.startsWith("./") ? props.icon.slice(1) : props.icon;
+    fetch(path)
+      .then((res) => res.json())
+      .then((data) => setAnimationData(data))
+      .catch(() => {});
+  }, [props.icon]);
 
   useEffect(() => {
     if (!tabRef.current || !props.selected) {
@@ -54,11 +61,9 @@ const FeatureTab = (
   }, [props.selected, xPercentage, yPercentage]);
 
   const handleTabHover = () => {
-    if (dotLottieRef.current === null) {
-      return;
+    if (lottieRef.current) {
+      lottieRef.current.goToAndPlay(0);
     }
-    dotLottieRef.current.seek(0);
-    dotLottieRef.current?.play();
   };
 
   return (
@@ -66,27 +71,58 @@ const FeatureTab = (
       ref={tabRef}
       onMouseEnter={handleTabHover}
       onClick={props.onClick}
-      className="relative flex gap-2.5 p-2.5 lg:flex-1 items-center border border-white/15 rounded-xl cursor-pointer"
+      className={`
+        relative group flex flex-col h-full p-4 md:p-5 rounded-xl border cursor-pointer
+        transition-all duration-300
+        ${props.selected
+          ? "border-[#daa520]/30 bg-[#daa520]/[0.06]"
+          : "border-skin-base/10 card-surface hover:border-skin-base/20 hover:bg-skin-base/[0.05]"
+        }
+      `}
     >
+      {/* Animated border trace when selected */}
       {props.selected && (
         <motion.div
-          style={{
-            maskImage: maskImage,
-          }}
-          className="absolute inset-0 -m-px border border-[#f7b526] rounded-xl"
-        ></motion.div>
-      )}
-      <div className="inline-flex justify-center items-center size-12 border border-white/15 rounded-lg">
-        <DotLottiePlayer
-          ref={dotLottieRef}
-          src={props.icon}
-          className="size-5"
-          autoplay
+          style={{ maskImage }}
+          className="absolute inset-0 -m-px border border-[#daa520] rounded-xl"
         />
+      )}
+
+      {/* Icon container */}
+      <div
+        className={`
+          inline-flex justify-center items-center size-11 md:size-14 rounded-lg mb-3
+          transition-all duration-300
+          ${props.selected
+            ? "bg-[#daa520]/15 border border-[#daa520]/25"
+            : "bg-skin-base/5 border border-skin-base/10 group-hover:border-skin-base/20"
+          }
+        `}
+      >
+        {animationData && (
+          <Lottie
+            lottieRef={lottieRef}
+            animationData={animationData}
+            className="size-6 md:size-8"
+            autoplay
+            loop={false}
+          />
+        )}
       </div>
-      <span className="font-medium">{props.title}</span>
+
+      {/* Title */}
+      <span
+        className={`
+          text-xs md:text-sm font-medium leading-tight transition-colors duration-300
+          ${props.selected ? "text-skin-base" : "text-skin-base/70 group-hover:text-skin-base/90"}
+        `}
+      >
+        {props.title}
+      </span>
+
+      {/* "new" badge */}
       {props.isNew && (
-        <span className="px-2 py-0.5 text-xs bg-[#f7b526] text-black font-semibold rounded-full">
+        <span className="absolute top-3 right-3 px-2 py-0.5 text-[10px] bg-[#daa520] text-black font-semibold rounded-full">
           new
         </span>
       )}

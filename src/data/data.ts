@@ -3,7 +3,7 @@ import { Avatar1, Avatar2, Avatar3, Avatar4, ChrisAvatar, PedroAvatar, VanessaAv
 export const featuresTabs = [
   {
     icon: "./assets/lottie/advantage.json",
-    title: "Build strong business",
+    title: "Build STRONG Business",
     description: "Building a strong business is not merely about creating a product or service; it's about establishing a foundation that ensures growth, adaptability, and sustainability. A strong business thrives on core principles such as vision, leadership, customer focus, and innovation, each playing a critical role in shaping its trajectory",
     isNew: false,
     backgroundPositionX: 50,
@@ -21,7 +21,7 @@ export const featuresTabs = [
   },
   {
     icon: "./assets/lottie/security.json",
-    title: "Build financial security",
+    title: "Build Financial Security",
     description: "Achieving financial security goes beyond just saving money; it requires careful planning, smart investments, and risk management. Building financial stability involves setting clear financial goals, diversifying income sources, and making informed decisions about savings, investments, and expenses. Whether for individuals or businesses, financial security provides long-term stability, resilience against economic uncertainties, and the freedom to grow and innovate with confidence.",
     isNew: false,
     backgroundPositionX: 50,
@@ -105,23 +105,36 @@ export const testimonials = [
 
 export const TeamMilliark = [
   {
-    name: "Christiano Trotta",
-    role: "President LatAm America",
+    key: "christiano",
     avatarImg: ChrisAvatar,
+    socials: {
+      linkedin: "https://www.linkedin.com/in/christiano-trotta-238a424b/",
+      x: "https://x.com/",
+      instagram: "https://instagram.com/",
+    },
   },
   {
-    name: "Pedro Trotta",
-    role: "Tech Leader",
+    key: "pedro",
     avatarImg: PedroAvatar,
+    socials: {
+      linkedin: "https://www.linkedin.com/in/pedro-forte-853b17323/",
+      x: "https://x.com/",
+    },
   },
   {
-    name: "Vitoria Petek",
-    role: "Head Sales",
+    key: "vitoria",
     avatarImg: VitoriaAvatar,
+    socials: {
+      linkedin: "https://linkedin.com/",
+      instagram: "https://instagram.com/",
+    },
   },
   {
-    name: "Vanessa F.",
-    role: "Head Marketing",
+    key: "vanessa",
     avatarImg: VanessaAvatar,
+    socials: {
+      linkedin: "https://linkedin.com/",
+      instagram: "https://instagram.com/",
+    },
   },
 ];

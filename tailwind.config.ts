@@ -24,7 +24,15 @@ const config: Config = {
       md: "768px",
       lg: "1200px",
     },
-    extend: {},
+    extend: {
+      colors: {
+        skin: {
+          bg: "rgb(var(--c-bg) / <alpha-value>)",
+          base: "rgb(var(--c-base) / <alpha-value>)",
+          accent: "rgb(var(--c-accent) / <alpha-value>)",
+        },
+      },
+    },
   },
   plugins: [],
 };

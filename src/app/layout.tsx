@@ -1,12 +1,17 @@
 import React from "react";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { twMerge } from "tailwind-merge";
 import "@/styles/globals.css";
 import Seo from "@/components/Seo";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   title: "Milliark Investments - The Future of Financial Growth",
@@ -15,7 +20,6 @@ export const metadata: Metadata = {
   authors: [{ name: "Pedro Trotta", url: "github.com/PEDRONCIOOO" }],
   applicationName: "Milliark Investments",
   robots: "index, follow",
-  viewport: "width=device-width, initial-scale=1.0",
   alternates: {
     canonical: "https://milliark.com",
   },
@@ -38,9 +42,8 @@ export const metadata: Metadata = {
   },
 };
 
-<head>
-  <Seo />
-</head>
+// Anti-FOUC: reads stored theme before React hydrates
+const themeScript = `(function(){try{var t=localStorage.getItem('theme');if(t==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}})()`;
 
 export default function RootLayout({
   children,
@@ -48,12 +51,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body
-        className={twMerge(inter.className, "bg-black text-white antialiased")}
-        suppressHydrationWarning
+        className={twMerge(inter.className, "bg-skin-bg text-skin-base antialiased transition-colors duration-300")}
       >
-        {children}
+        <ThemeProvider>
+          <Seo />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

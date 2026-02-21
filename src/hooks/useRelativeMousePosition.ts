@@ -1,7 +1,7 @@
 import { useEffect, RefObject } from "react";
 import { useMotionValue } from "framer-motion";
 
-const useRelativeMousePosition = (to: RefObject<HTMLElement>) => {
+const useRelativeMousePosition = (to: RefObject<HTMLElement | null>) => {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 

@@ -1,0 +1,163 @@
+{
+  "metadata": {
+    "title": "Milliark Investments - The Future of Financial Growth",
+    "description": "Discover the investment strategies of Christiano Trotta. Milliark is among the world's top investment firms, offering premium financial solutions.",
+    "ogTitle": "Milliark Investments - Elevate Your Financial Future",
+    "ogDescription": "Explore the financial expertise of Christiano Trotta.",
+    "twitterTitle": "Milliark Investments - Your Trusted Financial Partner",
+    "twitterDescription": "Join Christiano Trotta and Milliark in shaping the future of investments."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Who we are",
+    "services": "What we offer",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "buttons": {
+    "callUs": "Call Us",
+    "seeOurJob": "See Our Job",
+    "talkToUs": "Talk To Us",
+    "viewOnMaps": "View on Google Maps",
+    "backToHome": "Back to Home"
+  },
+  "hero": {
+    "tagline": "At Milliark, we deliver for investors by building businesses that power tomorrow's economy"
+  },
+  "logoTicker": {
+    "title": "Trusted by top innovative teams"
+  },
+  "features": {
+    "heading": "Elevate your BUSINESS efforts.",
+    "subheading": "From small startups to large enterprises, our team has revolutionized the way businesses approach the market.",
+    "tabs": {
+      "strongBusiness": {
+        "title": "Build strong business",
+        "description": "Building a strong business is not merely about creating a product or service; it's about establishing a foundation that ensures growth, adaptability, and sustainability. A strong business thrives on core principles such as vision, leadership, customer focus, and innovation, each playing a critical role in shaping its trajectory"
+      },
+      "latam": {
+        "title": "Build a company in LatAm",
+        "description": "Expanding or starting a company in Latin America (LatAm) requires a deep understanding of the region's unique economic landscape, regulatory environment, and consumer behaviors. From navigating diverse markets to leveraging local partnerships, building a successful company in LatAm involves strategic planning, adaptability, and cultural awareness."
+      },
+      "financialSecurity": {
+        "title": "Build financial security",
+        "description": "Achieving financial security goes beyond just saving money; it requires careful planning, smart investments, and risk management. Building financial stability involves setting clear financial goals, diversifying income sources, and making informed decisions about savings, investments, and expenses."
+      },
+      "governance": {
+        "title": "Build Corporate Governance",
+        "description": "Corporate governance is the backbone of a successful and sustainable organization. It encompasses the systems, principles, and processes that ensure transparency, accountability, and ethical decision-making."
+      },
+      "regulations": {
+        "title": "Build Regulations",
+        "description": "Establishing effective regulations is essential for maintaining order, protecting stakeholders, and fostering a stable economic and business environment."
+      },
+      "compliances": {
+        "title": "Build Compliances",
+        "description": "Building strong compliance frameworks is essential for organizations to operate ethically, legally, and efficiently."
+      },
+      "policies": {
+        "title": "Build Policies and SOPs",
+        "description": "Developing clear policies and Standard Operating Procedures (SOPs) is essential for maintaining consistency, efficiency, and accountability within an organization."
+      },
+      "riskManagement": {
+        "title": "Build Risk Management",
+        "description": "Implementing a strong risk management framework is crucial for businesses to identify, assess, and mitigate potential threats."
+      }
+    }
+  },
+  "testimonials": {
+    "heading": "Beyond Expectations.",
+    "subheading": "Our revolutionary mindset have transformed our clients' strategies.",
+    "items": {
+      "sophia": {
+        "text": "\"This team has completely transformed how I manage my projects and deadlines\"",
+        "name": "Sophia Perez",
+        "title": "Director @ Quantum"
+      },
+      "jamie": {
+        "text": "\"These guys have completely revolutionized our SEO entire strategy overnight\"",
+        "name": "Jamie Lee",
+        "title": "Founder @ Pulse"
+      },
+      "alisa": {
+        "text": "\"The team is intuitive, it has saved us countless hours\"",
+        "name": "Alisa Hester",
+        "title": "Product @ Innovate"
+      },
+      "alec": {
+        "text": "\"Our team's productivity has increased significantly since we started booking with them\"",
+        "name": "Alec Whitten",
+        "title": "CTO @ Tech Solutions"
+      }
+    }
+  },
+  "team": {
+    "heading": "Meet the Milliark Team",
+    "description": "With a strategic vision and a focus on results, Christiano Trotta steered global companies through restructuring, management, and growth especially in international business and M&A boosting performance and turning organizations into success stories worldwide.",
+    "members": {
+      "christiano": { "name": "Christiano Trotta", "role": "President LatAm America" },
+      "pedro": { "name": "Pedro Trotta", "role": "Tech Leader" },
+      "vitoria": { "name": "Vitoria Petek", "role": "Head Sales" },
+      "vanessa": { "name": "Vanessa F.", "role": "Head Marketing" }
+    }
+  },
+  "servicesPreview": {
+    "heading": "What We Offer",
+    "subheading": "Core solutions to drive growth, security, and sustainable success for your business.",
+    "viewAll": "Explore All Services"
+  },
+  "stats": {
+    "years": { "value": "10", "suffix": "+", "label": "Years of Experience" },
+    "offices": { "value": "5", "suffix": "", "label": "Global Offices" },
+    "countries": { "value": "15", "suffix": "+", "label": "Countries Reached" },
+    "clients": { "value": "200", "suffix": "+", "label": "Clients Served" }
+  },
+  "cta": {
+    "heading": "Milliark for everyone.",
+    "subheading": "Achieve clear, impactful results without the complexity."
+  },
+  "headquarters": {
+    "heading": "Our Headquarters",
+    "locations": {
+      "florianopolis": "Florianópolis, Brazil",
+      "zurich": "Zürich, Switzerland",
+      "campinas": "Campinas, Brazil",
+      "newYork": "New York, USA",
+      "bvi": "BVI, British Island"
+    }
+  },
+  "footer": {
+    "brand": "Milliark Investments",
+    "codedBy": "Coded by"
+  },
+  "notFound": {
+    "title": "Page not found"
+  },
+  "blog": {
+    "heading": "Blog",
+    "comingSoon": "Coming soon. Stay tuned for insights and updates."
+  },
+  "pages": {
+    "about": {
+      "title": "About - Milliark Investments",
+      "description": "Meet the Milliark team. Learn about Christiano Trotta and the strategic leadership behind Milliark Investments."
+    },
+    "services": {
+      "title": "Services - Milliark Investments",
+      "description": "Explore our comprehensive business and financial services. From corporate governance to risk management."
+    },
+    "testimonials": {
+      "title": "Testimonials - Milliark Investments",
+      "description": "See what our clients say about working with Milliark Investments."
+    },
+    "contact": {
+      "title": "Contact - Milliark Investments",
+      "description": "Get in touch with Milliark Investments. Visit our headquarters worldwide."
+    },
+    "blog": {
+      "title": "Blog - Milliark Investments",
+      "description": "Insights and updates from Milliark Investments."
+    }
+  }
+}

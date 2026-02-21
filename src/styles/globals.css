@@ -2,16 +2,111 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+/* ─── Theme Variables ─── */
+@layer base {
+  :root {
+    --c-bg: 0 0 0;
+    --c-base: 255 255 255;
+    --c-accent: 218 165 32;
   }
 
+  [data-theme="light"] {
+    --c-bg: 245 247 250;
+    --c-base: 15 23 42;
+    --c-accent: 161 121 0;
+  }
+}
 
-::-webkit-scrollbar{
+/* ─── Theme Utility Classes ─── */
+@layer components {
+  /* Heading gradient — adapts to theme */
+  .heading-gradient {
+    background-image: linear-gradient(
+      to bottom,
+      rgb(var(--c-base)),
+      rgb(var(--c-base) / 0.6)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Card surface — glassmorphism (dark) / elevated white (light) */
+  .card-surface {
+    background: rgb(var(--c-base) / 0.02);
+  }
+
+  [data-theme="light"] .card-surface {
+    background: #ffffff;
+    border-color: #e2e8f0 !important;
+    box-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.08),
+      0 4px 12px rgba(0, 0, 0, 0.04);
+  }
+
+  [data-theme="light"] .card-surface:hover {
+    border-color: rgba(218, 165, 32, 0.4) !important;
+    box-shadow:
+      0 2px 8px rgba(0, 0, 0, 0.1),
+      0 8px 24px rgba(0, 0, 0, 0.06);
+  }
+
+  /* Ambient glow — visible in dark, hidden in light */
+  .theme-glow {
+    transition: opacity 0.3s ease;
+  }
+
+  [data-theme="light"] .theme-glow {
+    opacity: 0 !important;
+  }
+
+  /* Light mode: Enhance gold accent dividers for better visibility */
+  [data-theme="light"] .bg-gradient-to-r.via-\[\#daa520\]\/40 {
+    --tw-gradient-via: rgba(184, 134, 11, 0.6);
+  }
+
+  /* Force-dark wrapper: Hero and CTA always stay dark */
+  .force-dark {
+    --c-bg: 0 0 0;
+    --c-base: 255 255 255;
+    --c-accent: 218 165 32;
+    background-color: rgb(0 0 0);
+    color: rgb(255 255 255);
+  }
+
+  .force-dark .heading-gradient {
+    background-image: linear-gradient(
+      to bottom,
+      rgb(255 255 255),
+      rgb(255 255 255 / 0.6)
+    );
+  }
+
+  .force-dark .card-surface {
+    background: rgb(255 255 255 / 0.02);
+    box-shadow: none;
+  }
+}
+
+/* ─── Base Styles ─── */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::-webkit-scrollbar {
   width: 10px;
 }
 
-::-webkit-scrollbar-thumb{
-  background-color: goldenrod;
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--c-accent));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--c-bg));
 }
