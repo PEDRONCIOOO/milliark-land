@@ -94,7 +94,7 @@ const TeamMemberBox: React.FC<TeamMemberBoxProps> = ({
             <div className="flex gap-2 mt-3">
               {socialEntries.map(([platform, url]) => {
                 const Icon = socialIcons[platform];
-                if (!Icon) return null;
+                if (!Icon) { return null; }
                 return (
                   <Link
                     key={platform}

@@ -54,7 +54,7 @@ const DetailLottie = ({ src }: { src: string }) => {
       .then((d) => setData(d))
       .catch(() => {});
   }, [src]);
-  if (!data) return null;
+  if (!data) { return null; }
   return <Lottie animationData={data} className="w-full h-full" autoplay loop />;
 };
 
